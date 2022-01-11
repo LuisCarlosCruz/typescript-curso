@@ -1,0 +1,2 @@
+> ## Repositório do curso de Typescript
+1. Esse repositório é destinado ao estudo e aperfeiçoamento do Typescript, linguagem que cria funções tipadas e bem modeladas para garantir e barrar possíveis erros. Tornando o desenvolvimento de aplicações mais sólidas.
