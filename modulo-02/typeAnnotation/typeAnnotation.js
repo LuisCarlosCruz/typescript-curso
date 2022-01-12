@@ -1,7 +1,8 @@
 "use strict";
-// VARIÁVEIS
-let nome = "typeScript";
-console.log(nome);
+// STRING
+let nome = 'Luis';
+let nomeEmpresa = 'Lacoste';
+console.log(`Detalhes: ${nome} trabalha na empresa ${nomeEmpresa}`);
 // ARRAYS
 let animais = ["elefante", "cachorro", "gato", "girafa"];
 console.log(animais);

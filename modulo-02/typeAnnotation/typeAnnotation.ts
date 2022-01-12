@@ -1,6 +1,7 @@
-// VARIÁVEIS
-let nome: string = "typeScript";
-console.log(nome);
+// STRING
+let nome: string = 'Luis';
+let nomeEmpresa: string = 'Lacoste';
+console.log(`Detalhes: ${nome} trabalha na empresa ${nomeEmpresa}`);
 
 
 // ARRAYS
@@ -52,6 +53,7 @@ console.log('Number - Hexadecimal...: ', num2);
 console.log('Number - Octal...: ', num3);
 console.log('Number - Binário...: ', num4);
 
+
 // ex.BIGINT
 let big1: bigint = 9007199254740991n;
 let big2: bigint = 9007199254740995n;
@@ -61,7 +63,6 @@ console.log('Bigint...: ', big1);
 console.log('Bigint - Binário...: ', big2);
 console.log('Bigint - Hexadecimal...: ', big3);
 console.log('Bigint - Octal...: ', big4);
-
 
 
 
