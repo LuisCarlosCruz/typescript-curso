@@ -73,6 +73,47 @@ console.log('Bigint - Hexadecimal...: ', big3);
 console.log('Bigint - Octal...: ', big4);
 
 
+// TUPLE (tupla)
+// É uma lista de valores fixos de elementos (A ORDEM É IMPORTANTE)
+  // ex1: (lista homogênea)
+  let pessoa: [string, string, number];
+  pessoa = ['luis', 'carlos', 5];  //  (A ORDEM É IMPORTANTE)
+
+  // ex2: (com labels)
+  let pessoa2: [nome: string, posicao: string, idade: number] = ['luis', 'dev', 27];
+  console.log(pessoa2);
+  console.log(pessoa2[1]); // dev
+
+  // ex3. (Spread Operator)
+  let listaFrutas: [string, ...Array<string>] = ['maca', 'banana', 'laranja', 'manga'];
+  console.log(...listaFrutas);
+
+  // ex4. (lista heterogênea)
+  let listaFrutas2: [number, boolean, ...Array<string>] = [5, true, ...listaFrutas];
+  console.log(listaFrutas2);
+
+  // ex4. (em funções)
+  // 1° e 2º param são do tipo arrays e retorno um spread dos dois param
+  function listarPessoas(nome: Array<string>, idades: Array<number>) {
+    return [...nome, ...idades];
+  };
+  let resultadoFuncaoListarPessoas = listarPessoas(['luis', 'carlos'], [27, 72]);
+  console.log(resultadoFuncaoListarPessoas);
+
+  // ex5. (Labeled Tuples com Spread Operator numa função)
+  // type eu crio e defino o tipo
+  type Nome = [primeiroNome: string, segundoNome: string] // 
+              | // \ é um OU
+              [primeiroNome: string, segundoNome: string, terceiroNome: string];
+
+  function imprimeNomeCompleto(...nome: Nome) {
+    return [...nome];
+  };
+  console.log(imprimeNomeCompleto('luis', 'carlos', 'cruz'));
+  
+
+
+
 
 
 
