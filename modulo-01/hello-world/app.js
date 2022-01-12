@@ -1,3 +1,3 @@
 "use strict";
-let msg = 'Hello World';
+let msg = 'Hello World TypeScript';
 console.log(msg);
