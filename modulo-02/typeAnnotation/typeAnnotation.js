@@ -4,7 +4,14 @@ let nome = 'Luis';
 let nomeEmpresa = 'Lacoste';
 console.log(`Detalhes: ${nome} trabalha na empresa ${nomeEmpresa}`);
 // ARRAYS
+// array de strings
 let animais = ["elefante", "cachorro", "gato", "girafa"];
+console.log(animais);
+// outra sintaxe
+let animais2 = ["leao", "jacare", "sabia", "esquilo"];
+console.log(animais2);
+// ARRAY OBJECT
+let estados = [{ nomeEstado: 'São Paulo', sigla: 'DF', }];
 console.log(animais);
 // OBJETO
 let carro;
