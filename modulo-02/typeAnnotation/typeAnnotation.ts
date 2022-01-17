@@ -110,6 +110,28 @@ console.log('Bigint - Octal...: ', big4);
     return [...nome];
   };
   console.log(imprimeNomeCompleto('luis', 'carlos', 'cruz'));
+
+
+  // ENUM
+  // evitar usar enum
+  // é mais recomendado o uso de array ou obj
+  // ex.1
+  const enum Comida {
+    Hamburger = 'Hamburger',
+    Massa = 'Massa',
+    Pizza = 'Pizza',
+    Torta = 'Torta',
+    Churrasco = 'Churrasco',
+  }
+  
+  function comida(c: Comida) {
+    return 'Comidas muito apetitosas!';
+  }
+  
+  console.log(comida(Comida.Pizza));
+  console.log(comida(Comida.Churrasco));
+  // console.log(comida(5));  // error 
+
   
 
 
