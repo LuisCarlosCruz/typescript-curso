@@ -149,7 +149,18 @@ if (concluidaTarefa.status === Tarefa.Done) {
   console.log('Enviar e-mail: Tarefa Concluída!');
 }
 
-  
+
+// ANY
+// Pouco usado
+// Algo indefinido
+// É o default do typescript
+// ex.1
+const valorA: any = 888;
+const valorB: any = 'cachorro';
+
+const result = valorA + valorB;
+console.log(result); // 888cachorro
+
 
 
 
