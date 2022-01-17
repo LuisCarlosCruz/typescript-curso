@@ -113,9 +113,9 @@ console.log('Bigint - Octal...: ', big4);
 
 
   // ENUM
-  // evitar usar enum
   // é mais recomendado o uso de array ou obj
   // ex.1
+  // evitar usar enum string
   const enum Comida {
     Hamburger = 'Hamburger',
     Massa = 'Massa',
@@ -131,6 +131,23 @@ console.log('Bigint - Octal...: ', big4);
   console.log(comida(Comida.Pizza));
   console.log(comida(Comida.Churrasco));
   // console.log(comida(5));  // error 
+
+  // ex.2 : Quando usar enum?!
+enum Tarefa {
+  Todo,
+  Progress,
+  Done,
+}
+
+const concluidaTarefa = {
+  id: 1,
+  status: Tarefa.Done,
+  descricao: 'Parabéns! Tarefa concluída com sucesso!',
+};
+
+if (concluidaTarefa.status === Tarefa.Done) {
+  console.log('Enviar e-mail: Tarefa Concluída!');
+}
 
   
 
