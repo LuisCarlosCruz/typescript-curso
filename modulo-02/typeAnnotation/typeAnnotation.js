@@ -84,4 +84,49 @@ function imprimeNomeCompleto(...nome) {
 }
 ;
 console.log(imprimeNomeCompleto('luis', 'carlos', 'cruz'));
-// Enums
+function comida(c) {
+    return 'Comidas muito apetitosas!';
+}
+console.log(comida("Pizza" /* Pizza */));
+console.log(comida("Churrasco" /* Churrasco */));
+// console.log(comida(5));  // error 
+// ex.2 : Quando usar enum?!
+var Tarefa;
+(function (Tarefa) {
+    Tarefa[Tarefa["Todo"] = 0] = "Todo";
+    Tarefa[Tarefa["Progress"] = 1] = "Progress";
+    Tarefa[Tarefa["Done"] = 2] = "Done";
+})(Tarefa || (Tarefa = {}));
+const concluidaTarefa = {
+    id: 1,
+    status: Tarefa.Done,
+    descricao: 'Parabéns! Tarefa concluída com sucesso!',
+};
+if (concluidaTarefa.status === Tarefa.Done) {
+    console.log('Enviar e-mail: Tarefa Concluída!');
+}
+// ANY
+// Pouco usado
+// Algo indefinido
+// É o default do typescript
+// ex.1
+const valorA = 888;
+const valorB = 'cachorro';
+const result = valorA + valorB;
+console.log(result); // 888cachorro
+// UNKNOWN
+// Não sabe qual tipo definir (valor desconhecido)
+// ex.1
+// (aceita qualquer tipo)
+let valorVariavel;
+valorVariavel = true;
+valorVariavel = 123;
+valorVariavel = [];
+valorVariavel = 'Oi! Tudo bem?';
+console.log(valorVariavel); // 'Oi! Tudo bem?'
+// ex.2 Erro ao atribuir um valor do tipo 'unknown' a outros tipos!
+// let valor: unknown;
+// let valor1: boolean = valor;
+// let valor2: any = valor;
+// let valor3: any[] = valor;
+// let valor4: string = valor;

@@ -162,6 +162,24 @@ const result = valorA + valorB;
 console.log(result); // 888cachorro
 
 
+// UNKNOWN
+// Não sabe qual tipo definir (valor desconhecido)
+// ex.1
+// (aceita qualquer tipo)
+let valorVariavel: unknown;
+
+valorVariavel = true;
+valorVariavel = 123;
+valorVariavel = [];
+valorVariavel = 'Oi! Tudo bem?';
+console.log(valorVariavel); // 'Oi! Tudo bem?'
+
+// ex.2 Erro ao atribuir um valor do tipo 'unknown' a outros tipos!
+// let valor: unknown;
+// let valor1: boolean = valor;
+// let valor2: any = valor;
+// let valor3: any[] = valor;
+// let valor4: string = valor;
 
 
 
