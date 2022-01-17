@@ -84,3 +84,4 @@ function imprimeNomeCompleto(...nome) {
 }
 ;
 console.log(imprimeNomeCompleto('luis', 'carlos', 'cruz'));
+// Enums
