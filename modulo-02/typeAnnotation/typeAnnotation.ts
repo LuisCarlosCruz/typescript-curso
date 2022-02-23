@@ -182,3 +182,10 @@ let variavel = null; //
 let undef; // undefined
 
 
+// NEVER
+// NAO muito utilizado
+// utilizado geralmente em erros
+// nao pode receber valores
+function error(msg: string): never {
+  throw new Error(msg);
+}

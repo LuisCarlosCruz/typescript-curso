@@ -128,3 +128,10 @@ let variavel = null; //
 // Indica ausência
 // É convertido em NAN (Not a Number)
 let undef; // undefined
+// NEVER
+// NAO muito utilizado
+// utilizado geralmente em erros
+// nao pode receber valores
+function error(msg) {
+    throw new Error(msg);
+}
