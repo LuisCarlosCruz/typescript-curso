@@ -115,3 +115,16 @@ const valorB = 'cachorro';
 const result = valorA + valorB;
 console.log(result); // 888cachorro
 // VOID
+// Ausência de dados
+// NAO retorna nada
+const log = (msg) => {
+    console.log(msg);
+};
+// NULL
+// Representa o nulo,vazio ou ZERO
+// Valor vazio ou inexistente
+let variavel = null; // 
+// UNDEFINED
+// Indica ausência
+// É convertido em NAN (Not a Number)
+let undef; // undefined
