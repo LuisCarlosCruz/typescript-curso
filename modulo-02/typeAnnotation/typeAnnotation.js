@@ -84,4 +84,34 @@ function imprimeNomeCompleto(...nome) {
 }
 ;
 console.log(imprimeNomeCompleto('luis', 'carlos', 'cruz'));
-// Enums
+function comida(c) {
+    return 'Comidas muito apetitosas!';
+}
+console.log(comida("Pizza" /* Pizza */));
+console.log(comida("Churrasco" /* Churrasco */));
+// console.log(comida(5));  // error 
+// ex.2 : Quando usar enum?!
+var Tarefa;
+(function (Tarefa) {
+    Tarefa[Tarefa["Todo"] = 0] = "Todo";
+    Tarefa[Tarefa["Progress"] = 1] = "Progress";
+    Tarefa[Tarefa["Done"] = 2] = "Done";
+})(Tarefa || (Tarefa = {}));
+const concluidaTarefa = {
+    id: 1,
+    status: Tarefa.Done,
+    descricao: 'Parabéns! Tarefa concluída com sucesso!',
+};
+if (concluidaTarefa.status === Tarefa.Done) {
+    console.log('Enviar e-mail: Tarefa Concluída!');
+}
+// ANY
+// Pouco usado
+// Algo indefinido
+// É o default do typescript
+// ex.1
+const valorA = 888;
+const valorB = 'cachorro';
+const result = valorA + valorB;
+console.log(result); // 888cachorro
+// VOID

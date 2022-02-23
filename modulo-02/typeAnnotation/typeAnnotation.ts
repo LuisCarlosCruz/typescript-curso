@@ -162,6 +162,8 @@ const result = valorA + valorB;
 console.log(result); // 888cachorro
 
 
+// VOID
+
 
 
 
