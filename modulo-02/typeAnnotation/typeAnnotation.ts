@@ -182,9 +182,29 @@ console.log(valorVariavel); // 'Oi! Tudo bem?'
 // let valor4: string = valor;
 
 
+// VOID
+// Ausência de dados
+// NAO retorna nada
+const log = (msg: string): void => {
+  console.log(msg);
+}
+
+// NULL
+// Representa o nulo,vazio ou ZERO
+// Valor vazio ou inexistente
+let variavel = null; // 
 
 
+// UNDEFINED
+// Indica ausência
+// É convertido em NAN (Not a Number)
+let undef; // undefined
 
 
-
-
+// NEVER
+// NAO muito utilizado
+// utilizado geralmente em erros
+// nao pode receber valores
+function error(msg: string): never {
+  throw new Error(msg);
+}
